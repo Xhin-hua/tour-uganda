@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style  >
+        
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    
+    margin: 1px auto;
+    padding: 1px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.attractions {
+    
+    width:  auto ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ 
+.attraction {
+    width: auto;
+    
+    margin: 20px;
+    width: calc(90% - 40px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.attraction img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.attraction:hover img {
+    transform: scale(1.1);
+}
+
+.slide-up {
+    animation: slide-up 1s ease-in-out;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0.2;
+        filter: grayscale(100%);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        filter: grayscale(0%);
+    }
+}
+
+.slide-right {
+    animation: slide-right 1s ease-in-out;
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+        
+    </style>
+    
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Attractions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Explore Our Tourist Attractions</h1>
+        <div class="attractions">
+            <div class="attraction">
+                <img src="image1.jpg" alt="Attraction 1">
+                <h2>Attraction 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="attraction">
+                <img src="../images/basic/jose7.jpg" alt="Attraction 2">
+                <h2>Attraction 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="attraction">
+                <img src="image3.jpg" alt="Attraction 3">
+                <h2>Attraction 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="attraction">
+                <img src="../images/basic/jose1.jpg" alt="Attraction 4">
+                <h2>Attraction 4</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="attraction">
+                <img src="image5.jpg" alt="Attraction 5">
+                <h2>Attraction 5</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+
+    <script >
+         document.addEventListener("DOMContentLoaded", () =>{
+            
+            console.log( 'hello' );
+            
+            // Add event listeners to attraction images for hover effects
+const attractions = document.querySelectorAll('.attraction');
+
+attractions.forEach((attraction) => {
+    attraction.addEventListener('mouseover', () => {
+        attraction.style.transform = 'scale(1.05)';
+    });
+
+    attraction.addEventListener('mouseout', () => {
+        attraction.style.transform = 'scale(1)';
+    });
+});
+            
+        } );
+    </script>
+</body>
+</html>
