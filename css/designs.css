@@ -1,0 +1,354 @@
+/*designs for tourUganda*/
+
+header {
+    position: fixed ;
+    
+    
+    top:0;
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(to right, #0029FF, #8BC34A ,#FFED00);
+    text-align: justify;    
+      
+
+}
+
+header ul{
+ align-items: justify;
+  list-style-type: none;
+  margin: 2px;
+  padding: 2px;
+  overflow: hidden;
+  background-color: ;
+}
+
+header ul li {
+       position: relative;
+         
+  float: left; padding-right: ; padding-top: 5px;  
+  font-weight: bold;
+   font family: 'Tahoma';
+  
+
+}
+
+header ul li a {
+  display: block;
+  color: white;
+  /*text-align: center;*/
+  padding: 14px 16px;
+  text-decoration: none;
+  
+    
+}
+/* header  ul li:hover {
+    background-color: #7897FF;
+}   */
+
+.bars {
+    display: block;
+  width: 20px;
+  height: 3px;
+  background-color: #2500FF;
+  margin-bottom: 3px;
+}
+.main-body {
+    margin-top: 50px;
+    background-color: #69FF00;
+}
+
+/* entire background black*/
+body {
+  background-color: #000;
+}
+
+
+
+.whatsapp-call {
+    position: fixed;
+    bottom: 20px; right: 10px;
+    height:50px; width: 50px;
+    border-radius: 100%;
+   
+}
+.top-left-icon {
+    width: 30px; height: 30px;
+    border-radius: 20px;
+    position: absolute;
+}
+ 
+ 
+h1 {
+    text-align: center;
+    color: white;
+    font-family: Courier New, cursive ;
+}
+
+
+
+body{
+   font-family: Comic Sans MS;
+    background-color: #303030;
+    color: #333;
+}
+
+footer {
+    color: white;
+    background-color: #040064;
+    text-align: center;
+    font-size: 20px;
+}
+ footer ul {
+       list-style-type: none;
+       
+ }
+/*expanding sections attained by this*/
+
+.element {
+max-height: 5em;
+overflow: hidden;
+position: relative;
+}
+
+.element.expanded {
+max-height: none;
+}
+
+.more-button {
+position: absolute;
+right: 20px;
+background-color: none;
+border: none;
+padding: 0.5em;
+cursor: pointer;
+}
+
+.more-button:hover {
+background-color: #f0f0f0;
+}
+
+.more-content {
+display: none;
+}
+
+.expanded .more-content {
+display: block;
+}
+.top-dialog-box {
+    position: relative;
+    left:; 0;
+    bottom: 0;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: scroll; 
+background-color: #008C01;
+}
+
+
+section {
+    
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ 
+ .zziwa {
+     
+    background-image: url('images/jose1.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+ }
+img {
+      image-rendering: -webkit-optimize-contrast;
+     border-radius: 20px:
+}
+
+
+        /* body designs */
+
+
+        
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    
+    margin: 5px auto;
+    padding: 5px;
+    background-color: #004C11;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.attractions {
+    
+    width:  auto ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ 
+.attraction {
+    width: auto;
+    
+    margin: 20px;
+    width: calc(100% - 40px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.attraction img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.attraction:hover img {
+    transform: scale(1.1);
+}
+
+.slide-up {
+    animation: slide-up 1s ease-in-out;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0.2;
+        filter: grayscale(100%);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        filter: grayscale(0%);
+    }
+}
+
+.slide-right {
+    animation: slide-right 1s ease-in-out;
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/*tour gides*/
+
+.ghead {
+    background-color: #34C759;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.guides {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.guide {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.guide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.guide h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*things to do*/
+ .activity-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.activity {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.activity img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+/* Top Nav for wild life */
+.top-nav {
+  position: sticky;
+  top: ;
+  left: 0;
+  width: 100%;
+  background-color: #01550A; 
+  color: #0F00FF;
+  overflow-x: auto ;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #0056b3;
+}
+
+.top-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.top-nav ul :hover{
+    background-color: #60A618;
+}
+
+.top-nav li {
+  margin-right: 20px;
+}
+
+.top-nav li:not(:last-child) {
+  border-right: 1px solid #0056b3;
+}
